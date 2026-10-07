@@ -32,7 +32,7 @@ Your listening history is personal, so here is exactly how it is handled:
 1. Go to your Spotify account's **Privacy settings** page.
 2. Under **Download your data**, request **Account data**.
 3. Spotify emails you a link, which can take up to 30 days to arrive.
-4. Unzip the download. You will a find file named `Streaming_History_music_0.json` (or very similar). This is the file you upload.
+4. Unzip the download. You will find a file named `Streaming_History_music_0.json` (or very similar). This is the file you upload.
  
 ## Installation
  
