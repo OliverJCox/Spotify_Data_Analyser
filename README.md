@@ -94,7 +94,7 @@ After cleaning, every analysis function can rely on a DataFrame with these colum
 - **`session_state` over `cache_data`.** Cached data in Streamlit is shared across users on a server. `session_state` keeps each user's data scoped to their own session.
 - **Filters are arguments, not hidden states.** A frozen `Filters` (immutable) dataclass is passed into analyser methods on each call, which keeps behaviour predictable and easily testable.
 
-### ADR's (Architectural decision records
+### ADR's (Architectural decision records)
 
 **ADR's can be found in ./docs/decisions/**
  
