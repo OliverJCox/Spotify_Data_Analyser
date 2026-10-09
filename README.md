@@ -83,10 +83,10 @@ After cleaning, every analysis function can rely on a DataFrame with these colum
  
 | Column | Type | Description |
 |---|---|---|
-| `endTime` | `datetime64[ns, UTC]` | When the stream ended |
-| `trackName` | `str` | Track name |
-| `artistName` | `str` | Primary artist |
-| `msPlayed` | `float` | Time played, in milliseconds |
+| `ended_at` | `datetime64[ns, UTC]` | When the stream ended |
+| `track` | `str` | Track name |
+| `artist` | `str` | Primary artist |
+| `minutes` | `float` | Time played, in milliseconds |
  
 ### Key design decisions
  
