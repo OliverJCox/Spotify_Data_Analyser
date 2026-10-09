@@ -110,7 +110,8 @@ After cleaning, every analysis function can rely on a DataFrame with these colum
 |   |-- models.py           # Filters and result dataclasses
 |   |-- analyser.py         # StreamingAnalyser facade
 |-- docs/
-|   └── decisions/          # Architecture Decision Records
+|   |-- decisions/          # Architecture Decision Records
+|-- tests/                  # Contains all tests for modules
 |-- requirements.txt
 |-- README.md
 ```
