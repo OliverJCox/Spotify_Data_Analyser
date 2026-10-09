@@ -1,0 +1,9 @@
+endTime,artistName,trackName,msPlayed
+2024-01-05 08:15,Test Artist A,Song One,200000
+2024-01-05 08:20,Test Artist A,Song Two,180000
+2024-01-05 12:30,Test Artist B,Song Three,240000
+2024-01-06 18:45,Test Artist B,Song Three,240000
+2024-01-06 18:50,Test Artist C,Song Four,3000
+2024-01-07 23:10,Test Artist A,Song One,200000
+2024-02-01 09:00,Test Artist C,Song Four,210000
+2024-02-01 09:05,Test Artist C,Song Five,190000
