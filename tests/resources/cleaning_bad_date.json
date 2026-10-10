@@ -1,0 +1,6 @@
+[
+  {"endTime": "2024-03-01 10:00", "artistName": "Test Artist A", "trackName": "Song One",   "msPlayed": 200000},
+  {"endTime": "not a date",       "artistName": "Test Artist B", "trackName": "Song Two",   "msPlayed": 180000},
+  {"endTime": "2024-03-01 10:10", "artistName": "Test Artist C", "trackName": "Song Three", "msPlayed": 190000},
+  {"endTime": "2024-03-01 10:15", "artistName": "Test Artist A", "trackName": "Song Four",  "msPlayed": 210000}
+]
