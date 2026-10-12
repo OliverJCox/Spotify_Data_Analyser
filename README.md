@@ -63,9 +63,10 @@ flowchart LR
     A[JSON files] --> B[Loader]
     B -->|raw DataFrame| C[Cleaner]
     C -->|clean DataFrame| D[StreamingAnalyser]
-    D --> E[Analysis functions]
     E -->|DataFrames| D
+    D -->|DataFrames| E
     D -->|DataFrames| F[Streamlit app]
+    F -->|Filters| D
     F --> G[Charts and tables]
 ```
  
