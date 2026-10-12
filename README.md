@@ -107,7 +107,7 @@ After cleaning, every analysis function can rely on a DataFrame with these colum
 |   |-- loader.py           # JSON -> raw DataFrame
 |   |-- cleaning.py         # Normalisation
 |   |-- analysis/           # Pure analysis functions
-|   |-- models.py           # Filters and result dataclasses
+|   |-- models.py           # Filters and resulting dataclasses
 |   |-- analyser.py         # StreamingAnalyser facade
 |-- docs/
 |   |-- decisions/          # Architecture Decision Records
