@@ -105,9 +105,9 @@ After cleaning, every analysis function can rely on a DataFrame with these colum
 |-- app.py                  # Streamlit entry point (display only)
 |-- src/
 |   |-- loader.py           # JSON -> raw DataFrame
-|   |-- cleaner.py         # Normalisation
+|   |-- cleaner.py          # Normalisation
 |   |-- analysis/           # Pure analysis functions
-|   |-- models.py           # Filters and resulting dataclasses
+|   |-- filters.py          # Filters and resulting dataclasses
 |   |-- analyser.py         # StreamingAnalyser facade
 |-- docs/
 |   |-- decisions/          # Architecture Decision Records
