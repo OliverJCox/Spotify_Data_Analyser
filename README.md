@@ -64,7 +64,7 @@ flowchart LR
     B -->|raw DataFrame| C[Cleaner]
     C -->|clean DataFrame| D[StreamingAnalyser]
     E -->|DataFrames| D
-    D -->|DataFrames| E
+    D -->|DataFrames| E[Analysis]
     D -->|DataFrames| F[Streamlit app]
     F -->|Filters| D
     F --> G[Charts and tables]
