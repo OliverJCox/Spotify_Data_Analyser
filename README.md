@@ -4,12 +4,16 @@ Upload your Spotify streaming history and explore your listening habits. Built w
 
 ## Aims of this repository
 
+The aim of this repository is to improve and practice my data analytics skills.
+
 At the time of working on this project I am a first year computer science student. I want to improve my documentation and planning skills so that I can be more effective at working with and understanding different stacks, as well as being able to work effectively in a team. The focus of this project is to have thorough and professional documentation and project structure just as much as it is to have a working solution. Any feedback on how to improve is appreciated. 
 
 ## Language and key information
 
 Language: **Python 3.14**
+
 Development environment: **VS Code**
+
 Key libraries: **Pandas** for data analysis and **Streamlit** for frontend
  
 ## Features - Subject to change if I come up with more ideas
