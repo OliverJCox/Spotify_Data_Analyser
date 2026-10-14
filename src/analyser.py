@@ -30,3 +30,18 @@ class StreamingAnalyser:
             df = df[df['ended_at'].dt.date <= filters.end_bound]
 
         return df
+
+    def Most_Played_Aritst(self, filters: Filters) -> pd.DataFrame:
+        df = self._Apply_Filters(filters=filters)
+    
+    def Most_Played_Song(self, filters: Filters) -> pd.DataFrame:
+        df = self._Apply_Filters(filters=filters)
+
+    def Top_10_Most_Played_Artists(self, filters: Filters) -> pd.DataFrame:
+        df = self._Apply_Filters(filters=filters)
+
+    def Top_10_Most_Played_Artists(self, filters: Filters) -> pd.DataFrame:
+        df = self._Apply_Filters(filters=filters)
+
+    def Get_Data(self, filters: Filters) -> pd.DataFrame:
+        return self._Apply_Filters(filters=filters)
