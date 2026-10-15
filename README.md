@@ -91,7 +91,7 @@ After cleaning, every analysis function can rely on a DataFrame with these colum
 | `ended_at` | `datetime64[ns, UTC]` | When the stream ended |
 | `track` | `str` | Track name |
 | `artist` | `str` | Primary artist |
-| `minutes` | `float` | Time played, in milliseconds |
+| `minutes` | `float` | Time played, in minutes |
  
 ### Key design decisions
  
