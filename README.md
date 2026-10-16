@@ -21,7 +21,11 @@ Key libraries: **Pandas** for data analysis and **Streamlit** for frontend
 - Upload Spotify streaming history JSON file(s)
 - Filter by date range 
 - Top artists and tracks
-- Listening patterns by week/month for each artist/song
+- Listening patterns by week/month for each artist/track
+
+Tracks are ranked based on the **number of plays**, minimum length for a play to count can be controlled by user. By default all plays are counted.
+Artists are ranked based on the **number of minutes** they have been listened to for. 
+If tracks/artists are equally ranked, they are sorted in **descending order**.
   
 ## Privacy
  
