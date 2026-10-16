@@ -3,7 +3,8 @@ import pandas as pd
 '''Artists are ranked based on the number of minutes they have been played for.
 Tracks are ranked on the number of times they have been listened to, the
 minimum duration for a play to count can be set by user by delfult all plays including
-instant skips are counted.
+instant skips are counted. If there are equals for minutes played (atrists) or times played
+(tracks) then values will be sorted in deccending order.
 
 Find_Top_Artists() - This function is responsible for returning the top artists from the dataframe
 passed to it. The number of items to show can be set by the parameter: number - which 
