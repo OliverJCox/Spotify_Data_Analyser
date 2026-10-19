@@ -1,6 +1,8 @@
 import pandas as pd
 from . import analysis, loader, cleaner
 from .filters import Filters
+from datetime import date
+from dataclasses import replace
 
 
 class StreamingAnalyser:
@@ -61,3 +63,27 @@ class StreamingAnalyser:
     def Play_Count(self, filters: Filters) ->int:
         df = self._Apply_Filters(filters=filters)
         return analysis.Track_Play_Count(df)
+
+    '''
+    Artist_List() - Returns all unique artists. Used for frontend artist search
+    Date_Range() - Returns total available dates, used in date selection wiget to set bounds
+    Listening_Over_Time() - Returns listening by month or day, used by frontend to make chart
+    Listening_Share() - Returns selected artists minutes listened as well as all non selected
+    artists minutes listened. Used by frontend for pie chart.
+    '''
+
+    def Artist_List(self) -> list[str]:
+        return sorted(self._df["artist"].unique())
+
+    def Date_Range(self) -> tuple[date, date]:
+        return self._df["ended_at"].min().date(), self._df["ended_at"].max().date()
+
+    def Listening_Over_Time(self, filters: Filters) -> pd.DataFrame:
+        df = self._Apply_Filters(filters=filters)
+        return analysis.Find_Listening_Over_Time(df)
+
+    def Listening_Share(self, filters: Filters) -> pd.DataFrame:
+        selected = self._Apply_Filters(filters)
+        everything = self._Apply_Filters(replace(filters, artist_names=None)) 
+        # Using replace() as dataclass is immutable
+        return analysis.Find_Share_Of_Listening(selected, everything)
