@@ -42,3 +42,18 @@ def test_find_number_of_plays():
     })
     result = analysis.Track_Play_Count(df)
     assert result == 3
+
+def test_listening_over_time_fills_gaps_with_zero():
+    df = pd.DataFrame({
+        "ended_at": pd.to_datetime(["2024-01-01 10:00", "2024-01-03 10:00"]),
+        "artist": ["aaa", "aaa"], "minutes": [2.0, 3.0],
+    })
+    result = analysis.Find_Listening_Over_Time(df)
+    assert result["aaa"].tolist() == [2.0, 0.0, 3.0]
+    assert result.index.name == "Day"
+
+def test_share_of_listening_adds_other_artists():
+    everything = pd.DataFrame({"artist": ["aaa", "bbb", "ccc"], "minutes": [1.0, 2.0, 3.0]})
+    result = analysis.Find_Share_Of_Listening(everything[everything["artist"] == "bbb"], everything)
+    assert result["artist"].tolist() == ["bbb", "All other artists"]
+    assert result["minutes"].tolist() == [2.0, 4.0]
