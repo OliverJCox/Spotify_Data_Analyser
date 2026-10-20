@@ -16,12 +16,12 @@ Development environment: **VS Code**
 
 Key libraries: **Pandas** for data analysis and **Streamlit** for frontend
  
-## Features - Subject to change if I come up with more ideas
+## Features
  
 - Upload Spotify streaming history JSON file(s)
 - Filter by date range 
 - Top artists and tracks
-- Listening patterns by week/month for each artist/track
+- Listening patterns by week/month for each artist
 
 Tracks are ranked based on the **number of plays**, minimum length for a play to count can be controlled by user. By default all plays are counted.
 Artists are ranked based on the **number of minutes** they have been listened to for. 
@@ -120,7 +120,9 @@ After cleaning, every analysis function can rely on a DataFrame with these colum
 |   |-- analyser.py         # StreamingAnalyser facade
 |-- docs/
 |   |-- decisions/          # Architecture Decision Records
+|   |-- ui_design/          # Wireframes for frontend design and summary of UI/UX design decisions
 |-- tests/                  # Contains all tests for modules
+|-- .streamlit              # Contains configuration file for visual design of frontend
 |-- requirements.txt
 |-- README.md
 ```
